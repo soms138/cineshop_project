@@ -1,0 +1,96 @@
+body, html {}
+/* main */
+main {}
+/* main_slide */
+#main_slide {}
+#main_slide .swiper-wrapper {}
+#main_slide .swiper-wrapper .swiper-slide {}
+#main_slide .swiper-wrapper .slide1 {}
+#main_slide .swiper-wrapper .slide2 {}
+#main_slide .swiper-wrapper .slide3 {}
+#main_slide .swiper-wrapper .slide4 {}
+#main_slide .swiper-wrapper .swiper-slide .slide_txt {}
+#main_slide .swiper-wrapper .swiper-slide .slide_txt em {}
+#main_slide .swiper-wrapper .swiper-slide .slide_txt span {}
+#main_slide .swiper-wrapper .swiper-slide .slide_txt a {}
+/* category-slide title 통합태그 */
+.siwper_wrap {}
+.siwper_wrap .title {}
+.siwper_wrap .title h2 {}
+.siwper_wrap .title a {}
+.siwper_wrap .title a span {}
+.siwper_wrap .title a span img {}
+/* category-slide */
+.category {}
+.category #category_slide {}
+.category #category_slide .swiper-wrapper {}
+.category #category_slide .swiper-wrapper .swiper-slide {}
+.category #category_slide .swiper-wrapper .slide1 {}
+.category #category_slide .swiper-wrapper .slide2 {}
+.category #category_slide .swiper-wrapper .slide3 {}
+.category #category_slide .swiper-wrapper .slide4 {}
+.category #category_slide .swiper-wrapper .slide5 {}
+.category #category_slide .swiper-wrapper .slide6 {}
+.category #category_slide .swiper-wrapper .slide7 {}
+/* best-slide */
+.best {}
+.best #best_slide {}
+.best #best_slide .swiper-wrapper {}
+.best #best_slide .swiper-wrapper .swiper-slide {}
+.best #best_slide .swiper-wrapper .swiper-slide .box {}
+.best #best_slide .swiper-wrapper .swiper-slide .box .item_img {}
+.best #best_slide .swiper-wrapper .swiper-slide .box .item_img img {}
+.best #best_slide .swiper-wrapper .swiper-slide .box .like_img {}
+.best #best_slide .swiper-wrapper .swiper-slide .box .like_img img {}
+.best #best_slide .swiper-wrapper .swiper-slide .txt {}
+.best #best_slide .swiper-wrapper .swiper-slide .txt .name {}
+.best #best_slide .swiper-wrapper .swiper-slide .txt .price {}
+/* new_menu */
+.new_menu {}
+.new_menu .tab_title {}
+.new_menu .tab_title a {}
+.new_menu .tab_title a.active {}
+.new_menu .tab_title span {}
+.new_menu .tab_contents {}
+.new_menu .tab_contents > div {}
+.new_menu .tab_contents > div .tab_bnr {}
+.new_menu .tab_contents > div .tab_bnr .txt {}
+.new_menu .tab_contents > div .tab_bnr .txt em {}
+.new_menu .tab_contents > div .tab_bnr .txt span {}
+.new_menu .tab_contents > div .tab_bnr .txt a {}
+.new_menu .tab_contents > div .tab_bnr .txt a span {}
+.new_menu .tab_contents > div .tab_bnr .txt a img {}
+.new_menu .tab_contents > div .item_wrap {}
+.new_menu .tab_contents > div .item_wrap a {}
+.new_menu .tab_contents > div .item_wrap a .box {}
+.new_menu .tab_contents > div .item_wrap a .box .item_img {}
+.new_menu .tab_contents > div .item_wrap a .box .item_img img {}
+.new_menu .tab_contents > div .item_wrap a .box .like_img {}
+.new_menu .tab_contents > div .item_wrap a .box .like_img img {}
+.new_menu .tab_contents > div .item_wrap a .txt {}
+.new_menu .tab_contents > div .item_wrap a .txt .name {}
+.new_menu .tab_contents > div .item_wrap a .txt .price {}
+/* ad_bnr */
+.ad_bnr {}
+.ad_bnr .txt {}
+.ad_bnr .txt p {}
+.ad_bnr .txt p span {}
+.ad_bnr .txt p span {}
+.ad_bnr .txt p em {}
+/* offline-slide */
+.offline {}
+.offline #shop_slide {}
+.offline #shop_slide .swiper-wrapper {}
+.offline #shop_slide .swiper-wrapper .swiper-slide {}
+.offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt {}
+.offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt em {}
+.offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt span {}
+/* alarm */
+.alarm {}
+.alarm p {}
+.alarm p span {}
+.alarm button {}
+.alarm button img {}
+.alarm button span {}
+.alarm a {}
+.alarm a img {}
