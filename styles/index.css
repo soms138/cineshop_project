@@ -1,4 +1,9 @@
 body, html {}
+.siwper_wrap, .new_menu {
+    max-width: calc(100% - 180px);
+    min-width: 320px;
+    margin: 0 auto;
+}
 /* main */
 main {}
 /* main_slide */
