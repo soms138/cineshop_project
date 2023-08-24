@@ -1,7 +1,5 @@
 body, html {}
-header, footer > * {
-    max-width: calc(100% - 180px);
-    min-width: 320px;
+header, footer {
     margin: 0 auto;
 }
 /* 위로가기 버튼 */
@@ -14,11 +12,14 @@ header, footer > * {
 #popup a img {width: 100%;}
 /* header */
 header {
+    width: 100%;
     background-color: pink;
-    padding: 30px 0;
+    padding: 30px 360px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 500;
 }
 header .left {
     display: flex;
@@ -32,7 +33,15 @@ header .left h1 {
 }
 header .left h1 a {}
 header .left h1 a img {width: 100%;}
-header .left nav {}
+header .left nav .nav_bg {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    left: 0;
+    z-index: 100;
+}
+header .left nav a {white-space: nowrap;}
 header .left nav > ul {
     text-align: center;
     display: flex;
@@ -101,8 +110,8 @@ header .lnb a:last-child {width: 25px; height: 25px;}
 header .lnb a img {width: 100%;}
 /* footer */
 footer {
-    background: #f3f3f3;
-    padding: 70px auto;
+    width: 1080px;
+    padding: 70px 0;
 }
 footer .fnb_t {
     padding-bottom: 10px;
@@ -116,7 +125,6 @@ footer .fnb_t a {
 footer .fnb_t a:nth-child(3) {color: #aaa;}
 footer .fnb_t a:last-child {margin-right: 0;}
 footer .fnb_mid {
-    background-color: lightcoral;
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
@@ -137,7 +145,6 @@ footer .fnb_mid .right > img {
 footer .fnb_mid .right a {}
 footer .fnb_mid .right a img {width: 30px; height: 30px;}
 footer .fnb_btm {
-    background-color: aquamarine;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
