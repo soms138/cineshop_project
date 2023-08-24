@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | CINESHOP</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- style -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <?php include('./header.php') ?>
+    <main>
+        <div class="login">
+            <h1>LOGIN</h1>
+            <div class="tab_title">
+                <a href="#" class="active">회원</a>
+                <a href="#">비회원</a>
+            </div>
+            <div class="tab_contents">
+                <div class="tab_c1">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="skip">로그인 양식</legend>
+                            <div class="login_input">
+                                <input type="text" id="id" placeholder="아이디">
+                                <input type="password" id="pwd" placeholder="비밀번호">
+                            </div>
+                            <div class="mid">
+                                <div class="fixed">
+                                    <label for="id_fixed"><input type="checkbox" name="id_fixed" id="id_fixed">
+                                    <span>아이디 저장</span></label>
+                                    <label for="login_fixed"><input type="checkbox" name="login_fixed" id="login_fixed">
+                                    <span>로그인 상태 유지</span></label>
+                                </div>
+                                <a href="#"><span>아이디/비밀번호 찾기</span><img src="#" alt=""></a>
+                            </div>
+                            <p><button type="submit" class="login_btn">로그인</button></p>
+                        </fieldset>
+                    </form>
+                    <div class="other">
+                        <a href="#"><img src="./images/ico_sns_google.png" alt=""><span>네이버 로그인</span></a>
+                        <a href="#"><img src="./images/ico_sns_apple.png" alt=""><span>카카오톡 로그인</span></a>
+                        <a href="#"><img src="./images/ico_sns_kakao.png" alt=""><span>구글 로그인</span></a>
+                    </div>
+                </div>
+                <div class="tab_c2">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="skip">비회원 주문조회 양식</legend>
+                            <div class="order_name">
+                                <p>주문자명</p>
+                                <p><input type="text" name="name" id="name" placeholder="주문자명"></p>
+                            </div>
+                            <div class="radio"> 
+                                <label for="email_order" class="active">
+                                    <input type="radio" checked name="email_order" value="email" id="email_order">
+                                    <span>이메일</span>
+                                </label>
+                                <label for="phone_order">
+                                    <input type="radio" name="phone_order" value="phone" id="phone_order">
+                                    <span>핸드폰 번호</span>
+                                </label>
+                            </div>
+                            <div class="order_contents">
+                                <div class="email_wrap">
+                                    <input type="text" name="num" class="num" placeholder="주문번호">
+                                    <div class="email_input">
+                                        <input type="email" name="email" id="email" placeholder="email">
+                                        <span>@</span>
+                                        <select name="email_select" id="email_select">
+                                            <option value="">주소를 선택해주세요.</option>
+                                            <option value="">naver.com</option>
+                                            <option value="">google.com</option>
+                                            <option value="">hanmail.net</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="phone_num">
+                                    <input type="text" name="num" class="num" placeholder="주문번호">
+                                    <div class="user_num">
+                                        <select name="phone_select" id="phone_select">
+                                            <option value="">통신사</option>
+                                            <option value="">SKT</option>
+                                            <option value="">KT</option>
+                                            <option value="">U+</option>
+                                        </select>
+                                        <input type="tel" name="number1" id="number1">-
+                                        <input type="tel" name="number2" id="number2">-
+                                        <input type="tel" name="number3" id="number3">
+                                    </div>
+                                </div>
+                            </div>
+                            <p><button type="submit">주문배송조회</button></p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="join">
+                <span>영화 굿즈 스토어 CINESHOP의 다양한 혜택을 누려보세요.</span>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+    </main>
+    <?php include('./footer.php') ?>
+    <script src="./script/login.js"></script>
+</body>
+</html>
