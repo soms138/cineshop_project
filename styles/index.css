@@ -53,7 +53,7 @@ main {}
     width: 211px;
 }
 #main_slide .swiper-wrapper .slide2 .slide_txt a {
-    background: #B3D8DF;
+    background: #71ceee;
     width: 192px;
 }
 .swiper-pagination {}
@@ -278,25 +278,28 @@ main {}
     width: 1080px;
     margin: 0 auto;
 }
-.ad_bnr .txt p {
+
+.ad_bnr .txt p:first-child {
     margin-bottom: 10px;
 }
-.ad_bnr .txt p:first-child {
-    font-size: 1.333rem;
+.ad_bnr .txt p:nth-child(2) {
+    margin-bottom: 20px;
 }
 .ad_bnr .txt p:last-child {
     border-radius: 30px;
     background: #E30F00;
     color: #fff;
+    font-size: 1.333rem;
     font-weight: 700;
     text-align: center;
-    padding: 5px 0;
-    width: 70px;
+    padding: 7px 0;
+    /* width: 130px; */
+    width: 180px;
     margin-bottom: 0;
 }
 .ad_bnr .txt p span,
 .ad_bnr .txt p em {
-    font-size: 1.777rem;
+    font-size: 2.369rem;
     font-weight: 700;
 }
 .ad_bnr .txt p span {}
@@ -410,7 +413,7 @@ main {}
     justify-content: center;
 }
 .alarm button {
-    background: rgba(179, 216, 223,0.7);
+    background: rgba(113, 206, 238,0.7);
     padding: 15px 100px;
     display: flex;
     align-items: center;
