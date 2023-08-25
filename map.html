@@ -10,9 +10,223 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/map.css">
 </head>
 <body>
     <?php include('./header.php') ?>
+    <main>
+        <h2>오프라인 매장 찾기</h2>
+        <div class="container">
+            <div class="store">
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend class="skip">검색양식</legend>
+                        <input type="text" name="search" id="search" placeholder="매장명 / 주소입력">
+                        <button type="submit" id="search_btn"><img src="./images/icon/ico_search_g.png" alt="검색버튼"></button>
+                    </fieldset>
+                </form>
+                <div class="store_select">
+                    <a href="#" class="active">
+                        <div class="txt">
+                            <em>용산 아이파크몰점</em>
+                            <span>서울특별시 용산구 한강대로23길 55 
+                                (한강로동, HDC아이파크몰 6층)</span>
+                        </div>
+                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                    </a>
+                    <a href="#">
+                        <div class="txt">
+                            <em>여의도점</em>
+                            <span>서울 영등포구 여의도동 국제금융로 15 IFC ~ 파크원간 지하공공보도</span>
+                        </div>
+                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                    </a>
+                    <a href="#">
+                        <div class="txt">
+                            <em>영등포점</em>
+                            <span>서울 영등포구 영중로 15 타임스퀘어 4F</span>
+                        </div>
+                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                    </a>
+                    <a href="#">
+                        <div class="txt">
+                            <em>왕십리점</em>
+                            <span>서울 성동구 왕십리광장로 17</span>
+                        </div>
+                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                    </a>
+                    <a href="#">
+                        <div class="txt">
+                            <em>인천점</em>
+                            <span>인천 남동구 예술로 198</span>
+                        </div>
+                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                    </a>
+                    <a href="#">
+                        <div class="txt">
+                            <em>광교점</em>
+                            <span>경기도 수원시 영통구 광교중앙로 124 갤러리아백화점 광교점 10층</span>
+                        </div>
+                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                    </a>
+                    <a href="#">
+                        <div class="txt">
+                            <em>천안 터미널점</em>
+                            <span>충남 천안시 동남구 만남로 43</span>
+                        </div>
+                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                    </a>
+                </div>
+            </div>
+            <div class="map_wrap">
+                <div class="map_contents">
+                    <div class="map_c1">
+                        <div class="txt_bg">
+                            <div class="txt">
+                                <h3>용산 아이파크몰점</h3>
+                                <p>서울특별시 용산구 한강대로 23길 55 
+                                    (한강로동, HDC 아이파크몰 6층)</p>
+                                <p>용산역 1번 출구에서 99m</p>
+                                <p>
+                                    <span>#IMAX</span>
+                                    <span>#4DX</span>
+                                    <span>#프라이빗박스</span>
+                                    <span>#씨네드쉐프</span>
+                                </p>
+                                <a href="#">매장보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_c2">
+                        <div class="txt_bg">
+                            <div class="txt">
+                                <h3>여의도점</h3>
+                                <p>서울 영등포구 여의도동 국제금융로 15 IFC ~ 파크원간 지하공공보도</p>
+                                <p>여의도역 3번 출구에서 515m</p>
+                                <p>
+                                    <span>#4DX</span>
+                                    <span>#스크린X</span>
+                                    <span>#CGV아트하우스</span>
+                                    <span>#템퍼시네마</span>
+                                </p>
+                                <a href="#">매장보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_c3">
+                        <div class="txt_bg">
+                            <div class="txt">
+                                <h3>영등포점</h3>
+                                <p>서울 영등포구 영중로 15 타임스퀘어 4F</p>
+                                <p>영등포역 6번 출구에서 195m</p>
+                                <p>
+                                    <span>#4DX</span>
+                                    <span>#스크린X</span>
+                                    <span>#골드클래스</span>
+                                    <span>#프라이빗박스</span>
+                                </p>
+                                <a href="#">매장보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_c4">
+                        <div class="txt_bg">
+                            <div class="txt">
+                                <h3>왕십리점</h3>
+                                <p>서울 성동구 왕십리광장로 17</p>
+                                <p>왕십리역 12번 출구에서 45m</p>
+                                <p>
+                                    <span>#IMAX</span>
+                                    <span>#4DX</span>
+                                    <span>#스위트박스</span>
+                                    <span>#골드클래스</span>
+                                </p>
+                                <a href="#">매장보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_c5">
+                        <div class="txt_bg">
+                            <div class="txt">
+                                <h3>인천점</h3>
+                                <p>인천 남동구 예술로 198</p>
+                                <p>예술회관역 1번 출구에서 108m</p>
+                                <p>
+                                    <span>#IMAX</span>
+                                    <span>#4DX</span>
+                                    <span>#프라이빗박스</span>
+                                    <span>#CGV아트하우스</span>
+                                </p>
+                                <a href="#">매장보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_c6">
+                        <div class="txt_bg">
+                            <div class="txt">
+                                <h3>광교점</h3>
+                                <p>경기도 수원시 영통구 광교중앙로 124 갤러리아백화점 광교점 10층</p>
+                                <p>광교중앙역 4번 출구에서 542m</p>
+                                <p>
+                                    <span>#IMAX</span>
+                                    <span>#4DX</span>
+                                    <span>#CINE CAFE</span>
+                                </p>
+                                <a href="#">매장보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map_c7">
+                        <div class="txt_bg">
+                            <div class="txt">
+                                <h3>천안 터미널점</h3>
+                                <p>충남 천안시 동남구 만남로 43</p>
+                                <p>천안역 1번 출구에서 1.5km</p>
+                                <p>
+                                    <span>#4DX</span>
+                                    <span>#4DX스크린</span>
+                                    <span>#프라이빗박스</span>
+                                    <span>#씨네앤포레</span>
+                                </p>
+                                <a href="#">매장보기 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="map"><!--지도삽입위치--></div>
+            </div>
+        </div>
+    </main>
     <?php include('./footer.php') ?>
+    <script src="./script/common.js"></script>
+    <script>
+        const map_contents = document.querySelectorAll('.map_contents > div')
+        const store_select = document.querySelectorAll('.store_select a')
+        for(let i of map_contents){i.style.display = 'none'}
+        map_contents[0].style.display = 'block'
+        store_select.forEach(function(t,i){
+            t.addEventListener('click', function(e){
+                e.preventDefault()
+                for(let i of store_select){i.classList.remove('active')}
+                t.classList.add('active')
+                for(let i of map_contents){i.style.display = 'none'}
+                map_contents[i].style.display = 'flex'
+            })
+        })
+    </script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=396ec80f8f00d79c0f3711d1194e54c9"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.5301199,126.9651948);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+	        center: new kakao.maps.LatLng(37.5301199,126.9651948),//지도의 중심좌표.
+	        level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+	        position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
 </body>
 </html>

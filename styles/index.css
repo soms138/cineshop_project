@@ -194,11 +194,21 @@ main {}
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
-.new_menu .tab_title a {font-size: 1.777rem;}
-.new_menu .tab_title a.active {font-weight: 700;}
-.new_menu .tab_title span {margin: 0 20px;}
+.new_menu .tab_title a {
+    font-size: 1.777rem;
+    color: #aaa;
+}
+.new_menu .tab_title a.active {
+    font-weight: 700;
+    color: #222;
+}
+.new_menu .tab_title span {
+    font-size: 1.333rem;
+    margin: 0 20px;
+    color: #aaa;
+}
 .new_menu .tab_contents {}
 .new_menu .tab_contents > div {}
 .new_menu .tab_contents > div .tab_bnr {

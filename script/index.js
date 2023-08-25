@@ -47,7 +47,6 @@ const offlineSlide = new Swiper('#shop_slide',{
         slideShadows: false,
         stretch: 70,
     },
-    
     speed:800,
     loop:true,
     on:{
@@ -56,11 +55,26 @@ const offlineSlide = new Swiper('#shop_slide',{
         },
         slideChange:function(){
             this.slides.forEach(target => {
+                target.style.opacity = '0.7';
                 target.querySelector('.slide_txt').style.opacity = '0';
                 target.querySelector('.slide_txt').style.transform = 'translateX(40%)';
             })
             this.slides[this.activeIndex].querySelector('.slide_txt').style.opacity = '1';
             this.slides[this.activeIndex].querySelector('.slide_txt').style.transform = 'translateX(0)';
-        }
+            this.slides[this.activeIndex].style.opacity = '1';
+        },
     },
+})
+const tab_title = document.querySelectorAll('.tab_title a')
+const tab_contents = document.querySelectorAll('.tab_contents > div')
+for(let i of tab_contents){i.style.display = 'none'}
+tab_contents[0].style.display = 'block'
+tab_title.forEach(function(t,i){
+    t.addEventListener('click', function(e){
+        e.preventDefault()
+        for(let i of tab_title){i.classList.remove('active')}
+        t.classList.add('active')
+        for(let i of tab_contents){i.style.display = 'none'}
+        tab_contents[i].style.display = 'block'
+    })
 })
