@@ -1,0 +1,172 @@
+main {
+    width: 1080px;
+    margin: 0 auto;
+}
+/* 상품 통합 태그 */
+main #best_slide .swiper-wrapper .swiper-slide,
+main .product_wrap .product_contents .product {
+    margin-bottom: 50px;
+}
+.box {
+    position: relative;
+    width: 250px;
+}
+.box .item_img {
+    display: block;
+    width: 250px; height: 250px;
+}
+.box .item_img img {width: 100%;}
+.box .like_img {
+    display: block;
+    width: 25px; height: 25px;
+    position: absolute;
+    top: 10px; right: 10px;
+    background: url(../images/icon/ico_like_w.png) no-repeat center;
+    text-indent: -9999px;
+    transition: all 0.3s linear;
+}
+.box .like_img:hover {
+    background: url(../images/icon/ico_like_fill.png) no-repeat center;
+}
+.box .like_fill {
+    display: block;
+    width: 25px; height: 25px;
+    position: absolute;
+    top: 10px; right: 10px;
+    background: url(../images/icon/ico_like_fill.png) no-repeat center;
+    text-indent: -9999px;
+}
+.txt {}
+.txt .name {
+    margin: 15px 0 5px;
+}
+.txt .price {
+    font-weight: 700;
+}
+/* all_product */
+main .all_product {
+    margin: 181px 0 70px;
+}
+main .all_product h1 {
+    font-size: 1.777rem;
+    font-weight: 700;
+    text-align: center;
+}
+main .all_product .category {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+main .all_product .category a {
+    background: #f3f3f3;
+    color: #aaa;
+    font-size: 1.333rem;
+    font-weight: 700;
+    border-radius: 30px;
+    margin-right: 15px;
+    padding: 10px 20px;
+    transition: all 0.3s linear;
+}
+main .all_product .category a.active {
+    background: #E30F00;
+    color: #fff;
+}
+main .all_product .category a:hover {
+    background: #E30F00;
+    color: #fff;
+}
+main #best_slide {}
+main #best_slide .swiper-wrapper {}
+main #best_slide .swiper-wrapper .swiper-slide {}
+main #best_slide .swiper-wrapper .swiper-slide .box {}
+main #best_slide .swiper-wrapper .swiper-slide .box .item_img {}
+main #best_slide .swiper-wrapper .swiper-slide .box .item_img img {}
+main #best_slide .swiper-wrapper .swiper-slide .box .like_img {}
+main #best_slide .swiper-wrapper .swiper-slide .box .like_img img {}
+main #best_slide .swiper-wrapper .swiper-slide .txt {}
+main #best_slide .swiper-wrapper .swiper-slide .txt .name {}
+main #best_slide .swiper-wrapper .swiper-slide .txt .price {}
+.best #best_slide .swiper-scrollbar {
+    background: rgba(243, 243, 243,0.8);
+    position: relative;
+    bottom: 0;
+}
+.best #best_slide .swiper-scrollbar-drag {background: #222;}
+/* product_wrap */
+main .product_wrap {
+    margin: 70px 0 100px;
+}
+main .product_wrap .product_t {
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main .product_wrap .product_t .movie {
+    display: flex;
+    align-items: center;
+}
+main .product_wrap .product_t .movie span {
+    color: #aaa;
+}
+main .product_wrap .product_t .movie a {transition: all 0.3s linear;}
+main .product_wrap .product_t .movie a.active,
+main .product_wrap .product_t .movie a:hover {
+    color: #E30F00;
+    font-weight: 700;
+}
+main .product_wrap .product_t .movie span {
+    font-size: 0.75rem;
+    margin: 0 15px;
+}
+main .product_wrap .product_t #order {
+    border: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/icon/ico_option.png) no-repeat right 10px center;
+    background-size: 10px;
+    width: 90px;
+    height: 35px;
+    padding: 5px 30px 5px 10px;
+}
+#order::-ms-expand{display:none;/*for IE10,11*/}
+main .product_wrap .product_t #order option {}
+main .product_wrap .product_contents {
+    display: flex;
+    flex-flow: row wrap;
+}
+main .product_wrap .product_contents .product {
+    width: calc(25% - 80.01px / 4);
+    margin-right: 26.67px;
+}
+main .product_wrap .product_contents .product:nth-child(4n) {
+    margin-right: 0;
+}
+main .product_wrap .product_contents .product .box {}
+main .product_wrap .product_contents .product .box .item_img {}
+main .product_wrap .product_contents .product .box .item_img img {}
+main .product_wrap .product_contents .product .box .like_img {}
+main .product_wrap .product_contents .product .box .like_img img {}
+main .product_wrap .product_contents .product .txt {}
+main .product_wrap .product_contents .product .txt .name {}
+main .product_wrap .product_contents .product .txt .price {}
+/* page */
+main .product_wrap .page {
+    text-align: center;
+    margin-top: 50px;
+}
+main .product_wrap .page a {
+    font-size: 1.333rem;
+    margin-right: 30px;
+}
+main .product_wrap .page a:last-child {margin-right: 0;}
+main .product_wrap .page a.active {
+    color: #E30F00;
+    font-weight: 700;
+    border-bottom: 1px solid #E30F00;
+}

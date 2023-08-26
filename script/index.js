@@ -30,6 +30,7 @@ const bestSlide = new Swiper('#best_slide',{
     autoplay:{delay:3000},
     speed:800,
     loop:true,
+    scrollbar:{el:'#best_slide .swiper-scrollbar'}, // 스크롤바 표시
     breakpoints:{
         700:{slidesPerView:3,},
         1100:{slidesPerView:4,},
