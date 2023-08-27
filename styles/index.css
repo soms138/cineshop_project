@@ -1,4 +1,12 @@
 body, html {}
+#pop_up {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 900;
+}
+#pop_up a {}
+#pop_up a img {}
 .swiper_wrap, .new_menu {
     max-width: 1080px;
     min-width: 320px;
@@ -16,6 +24,7 @@ main {}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    letter-spacing: -0.08em;
 }
 #main_slide .swiper-wrapper .slide1 {
     background-image: url(../images/main_bnr1_bg.jpg);
@@ -23,7 +32,6 @@ main {}
 #main_slide .swiper-wrapper .slide2 {
     background-image: url(../images/main_bnr2_bg.jpg);
 }
-
 #main_slide .swiper-wrapper .swiper-slide .container {}
 #main_slide .swiper-wrapper .swiper-slide .container .imgCls {
     width: 712px; height: 560px;
@@ -46,15 +54,15 @@ main {}
     color: #fff;
     font-size: 1.333rem;
     font-weight: 700;
-    letter-spacing: -0.02rem;
+    letter-spacing: -0.08em;
 }
 #main_slide .swiper-wrapper .slide1 .slide_txt a {
     background: #E30F00;
-    width: 211px;
+    width: 214px;
 }
 #main_slide .swiper-wrapper .slide2 .slide_txt a {
     background: #71ceee;
-    width: 192px;
+    width: 194px;
 }
 .swiper-pagination {}
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -70,6 +78,7 @@ main {}
 .offline .title h2 span:first-child {
     font-size: 1.777rem;
     font-weight: 700;
+    letter-spacing: -0.08em;
 }
 .swiper_wrap .title a {
     display: flex;
@@ -81,6 +90,7 @@ main {}
 .swiper_wrap .title a span {
     color: #aaa;
     margin-right: 5px;
+    letter-spacing: -0.08em;
 }
 .swiper_wrap .title a span img {width: 12px;}
 /* product 통합태그 */
@@ -105,7 +115,8 @@ main {}
 .best #best_slide .swiper-wrapper .swiper-slide .txt .name,
 .best #best_slide .swiper-wrapper .swiper-slide .txt .price,
 .new_menu .tab_contents > div .item_wrap div .txt .name,
-.new_menu .tab_contents > div .item_wrap div .txt .price {letter-spacing: -0.02em;}
+.new_menu .tab_contents > div .item_wrap div .txt .price {
+    letter-spacing: -0.08em;}
 .best #best_slide .swiper-wrapper .swiper-slide .txt .name,
 .new_menu .tab_contents > div .item_wrap div .txt .name {
     display: block;
@@ -163,6 +174,12 @@ main {}
     transform: translateX(-50%);
     width: 100%;
 }
+.category #category_slide .swiper-button-prev {
+    background: url(../images/icon/ico_prev.png) no-repeat center;
+}
+.category #category_slide .swiper-button-next {
+    background: url(../images/icon/ico_next.png) no-repeat center;
+}
 /* best-slide */
 .best {}
 .best #best_slide {}
@@ -199,6 +216,7 @@ main {}
 .new_menu .tab_title a {
     font-size: 1.777rem;
     color: #aaa;
+    letter-spacing: -0.08em;
 }
 .new_menu .tab_title a.active {
     font-weight: 700;
@@ -208,6 +226,7 @@ main {}
     font-size: 1.333rem;
     margin: 0 20px;
     color: #aaa;
+    letter-spacing: -0.08em;
 }
 .new_menu .tab_contents {}
 .new_menu .tab_contents > div {}
@@ -230,14 +249,18 @@ main {}
     font-size: 2.369rem;
     font-weight: 700;
     margin-bottom: 10px;
+    letter-spacing: -0.08em;
 }
-.new_menu .tab_contents > div .tab_bnr .txt span {font-size: 1.333rem;}
+.new_menu .tab_contents > div .tab_bnr .txt span {
+    font-size: 1.333rem;
+    letter-spacing: -0.08em;
+}
 .new_menu .tab_contents > div .tab_bnr .txt a {
     margin-top: 200px;
     background: rgba(0,0,0,0.5);
     border-radius: 30px;
     padding: 15px 20px;
-    width: 189px;
+    width: 175px;
     display: flex;
     align-items: center;
 }
@@ -245,6 +268,7 @@ main {}
     color: #fff;
     font-weight: 700;
     margin-right: 10px;
+    letter-spacing: -0.08em;
 }
 .new_menu .tab_contents > div .tab_bnr .txt a img {
     width: 15px; height: 15px;
@@ -283,12 +307,15 @@ main {}
     height: 100%;
     display: flex;
     align-items: center;
+    letter-spacing: -0.08em;
 }
 .ad_bnr .txt {
     width: 1080px;
     margin: 0 auto;
 }
-
+.ad_bnr .txt p {
+    letter-spacing: -0.08em;
+}
 .ad_bnr .txt p:first-child {
     margin-bottom: 10px;
 }
@@ -325,7 +352,6 @@ main {}
 .offline #shop_slide .swiper-wrapper {}
 .offline #shop_slide .swiper-wrapper .swiper-slide {
     display: block;
-    background-color: coral;
     width: 300px; height: 300px;
     position: relative;
     background-position: center;
@@ -367,6 +393,7 @@ main {}
 .offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt em,
 .offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt span {
     display: block;
+    letter-spacing: -0.08em;
 }
 .offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt em {
     font-size: 1.777rem;
@@ -403,7 +430,10 @@ main {}
     z-index: 200;
 }
 .alarm p,
-.alarm button span {color: #fff;}
+.alarm button span {
+    color: #fff;
+    letter-spacing: -0.08em;
+}
 .alarm p:nth-child(3) {color: #B3D8DF;}
 .alarm p:first-child,
 .alarm p:nth-child(3) {margin-bottom: 50px;}

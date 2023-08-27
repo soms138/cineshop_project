@@ -25,7 +25,7 @@ css 디자인 결과에서 숨겨지는 대상태그에
 적용하는 공통 클래스 skip */
 .skip {display:none;}
 /* swiper-slide 라이브러리에서 기본제공하는 이전, 다음 숨기기 */
-/* .swiper .swiper-button-prev::after,
+.swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
     display: none;
-} */
+}

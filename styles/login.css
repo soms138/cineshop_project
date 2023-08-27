@@ -1,3 +1,11 @@
+#pop_up {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 900;
+}
+#pop_up a {}
+#pop_up a img {}
 main {
     margin: 100px auto;
     text-align: center;
