@@ -72,7 +72,7 @@
                     </select>
                     <div class="num">
                         <button type="button" id="minus"><img src="./images/icon/ico_minus.png" alt="빼기"></button>
-                        <span>1</span>
+                        <span id="result">1</span>
                         <button type="button" id="plus"><img src="./images/icon/ico_plus.png" alt="추가하기"></button>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
             <div class="tab_title">
                 <a href="#" class="active">상세정보</a>
                 <a href="#">구매안내</a>
-                <a href="#">사용후기</a>
+                <a href="#">REVIEW</a>
                 <a href="#">Q&A</a>
             </div>
             <div class="tab_contents">
@@ -158,6 +158,7 @@
                 </div>
             </div>
         </section>
+        <?php include('./footer.php') ?>
     </main>
     <script src="./script/common.js"></script>
     <script>
@@ -165,6 +166,19 @@
         const img_contents = document.querySelectorAll('.img_contents > img')
         const tab_title= document.querySelectorAll('.tab_title a')
         const tab_contents = document.querySelectorAll('.tab_contents > div')
+        const plus = document.querySelector('#plus')
+        const minus = document.querySelector('#minus')
+        const result = document.querySelector('#result')
+        let a = 1
+        plus.addEventListener('click',function(){
+            a++
+            result.innerHTML = a
+        })
+        minus.addEventListener('click',function(){
+            if(a!==0)
+                a--
+                result.innerHTML = a
+        })
         for(let i of img_contents){i.style.display = 'none'}
         img_contents[0].style.display = 'block'
         img_tab.forEach(function(t,i){
@@ -179,9 +193,10 @@
         tab_title.forEach(function(t,i){
             t.addEventListener('click', function(e){
                 e.preventDefault()
-                window.scrollTo(0,tab_contents[i].offsetTop-70)
+                window.scrollTo(0,tab_contents[i].offsetTop-100)
             })
         })
+
     </script>
 </body>
 </html>

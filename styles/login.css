@@ -8,7 +8,7 @@ body, html {scroll-behavior: smooth;}
 #pop_up a {}
 #pop_up a img {}
 main {
-    margin: 100px auto;
+    margin: 181px auto 100px;
     text-align: center;
 }
 main .login {

@@ -25,22 +25,28 @@ for(let i of sub){
     i.style.display = 'none'
 }
 function sub_func(status){ // 서브 숨기기, 보이기 함수생성
-    nav_bg.style.display = status
+    nav_bg.style.transform = status
 }
-sub_func('none') // 함수 호출
+sub_func('translateY(-100%)') // 함수 호출
 for(let i of gnbInner){
+    i.lastElementChild.style.transform = 'translateY(-100%)'
+    for(let j of sub){
+        j.style.transform = 'translateY(-100%)'
+    }
+    sub_func('translateY(-100%)')
+    i.style.transition = 'all 1s ease';
     i.addEventListener('mouseover',function(){
         console.log(i.lastElementChild)
-        sub_func('block') // 함수 호출
-        i.lastElementChild.style.display = 'flex'
+        sub_func('translateY(0)') // 함수 호출
+        i.lastElementChild.style.display = 'flex';
         i.firstElementChild.style.color = '#FAFF00'
     })
     i.addEventListener('mouseout',function(){
-        sub_func('none') // 함수 호출
-        i.lastElementChild.style.display = 'none'
+        sub_func('translateY(-100%)') // 함수 호출
+        i.lastElementChild.style.transform = 'translateY(-100%)'
         i.lastElementChild.style.backgroundColor = 'none'
         for(let j of sub){
-            j.style.display = 'none'
+            j.style.transform = 'translateY(-100%)'
         }
         i.firstElementChild.style.color = 'white'
     })

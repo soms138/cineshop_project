@@ -33,70 +33,70 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide1">
                     <div class="box">
-                        <a href="#" class="item_img"><img src="./images/best1.jpg" alt=""></a>
+                        <a href="./detail.html" class="item_img"><img src="./images/best1.jpg" alt=""></a>
                         <a href="#" class="like_img">관심상품등록</a>
                     </div>
-                    <a href="#" class="txt">
+                    <a href="./detail.html" class="txt">
                         <h2 class="name">해리포터 랜덤카드</h2>
                         <p class="price">5,000원</p>
                     </a>
                 </div>
                 <div class="swiper-slide slide2">
                     <div class="box">
-                        <a href="#" class="item_img"><img src="./images/best2.jpg" alt=""></a>
+                        <a href="./detail.html" class="item_img"><img src="./images/best2.jpg" alt=""></a>
                         <a href="#" class="like_img">관심상품등록</a>
                     </div>
-                    <a href="#" class="txt">
+                    <a href="./detail.html" class="txt">
                         <h2 class="name">CGV 필름마크북 ver.4</h2>
                         <p class="price">18,000원</p>
                     </a>
                 </div>
                 <div class="swiper-slide slide3">
                     <div class="box">
-                        <a href="#" class="item_img"><img src="./images/best3.jpg" alt=""></a>
+                        <a href="./detail.html" class="item_img"><img src="./images/best3.jpg" alt=""></a>
                         <a href="#" class="like_img">관심상품등록</a>
                     </div>
-                    <a href="#" class="txt">
+                    <a href="./detail.html" class="txt">
                         <h2 class="name">스즈메의 문단속 다이진 마그넷 세트</h2>
                         <p class="price">27,000원</p>
                     </a>
                 </div>
                 <div class="swiper-slide slide4">
                     <div class="box">
-                        <a href="#" class="item_img"><img src="./images/best4.jpg" alt=""></a>
+                        <a href="./detail.html" class="item_img"><img src="./images/best4.jpg" alt=""></a>
                         <a href="#" class="like_img">관심상품등록</a>
                     </div>
-                    <a href="#" class="txt">
+                    <a href="./detail.html" class="txt">
                         <h2 class="name">스즈메의 문단속 입체 마그넷</h2>
                         <p class="price">18,000원</p>
                     </a>
                 </div>
                 <div class="swiper-slide slide5">
                     <div class="box">
-                        <a href="#" class="item_img"><img src="./images/best5.jpg" alt=""></a>
+                        <a href="./detail.html" class="item_img"><img src="./images/best5.jpg" alt=""></a>
                         <a href="#" class="like_img">관심상품등록</a>
                     </div>
-                    <a href="#" class="txt">
+                    <a href="./detail.html" class="txt">
                         <h2 class="name">스즈메의 문단속 뱃지</h2>
                         <p class="price">7,000원</p>
                     </a>
                 </div>
                 <div class="swiper-slide slide6">
                     <div class="box">
-                        <a href="#" class="item_img"><img src="./images/best6.jpg" alt=""></a>
+                        <a href="./detail.html" class="item_img"><img src="./images/best6.jpg" alt=""></a>
                         <a href="#" class="like_img">관심상품등록</a>
                     </div>
-                    <a href="#" class="txt">
+                    <a href="./detail.html" class="txt">
                         <h2 class="name">프렌즈 빈티지 노트</h2>
                         <p class="price">5,000원</p>
                     </a>
                 </div>
                 <div class="swiper-slide slide7">
                     <div class="box">
-                        <a href="#" class="item_img"><img src="./images/best7.jpg" alt=""></a>
+                        <a href="./detail.html" class="item_img"><img src="./images/best7.jpg" alt=""></a>
                         <a href="#" class="like_img">관심상품등록</a>
                     </div>
-                    <a href="#" class="txt">
+                    <a href="./detail.html" class="txt">
                         <h2 class="name">포켓몬스터 랜덤뱃지</h2>
                         <p class="price">10,000원</p>
                     </a>
@@ -127,16 +127,17 @@
     <script>
         const tab_title = document.querySelectorAll('.tab_title a')
         const tab_contents = document.querySelectorAll('.tab_contents > div')
-        let like = document.querySelectorAll('.like_img')
+        const like_img = document.querySelectorAll('.box .like_img')
         const bestSlide = new Swiper('#best_slide',{
-            slidesPerView: 2,
+            slidesPerView: 1,
             direction: 'horizontal',
             autoplay:{delay:3000},
             speed:800,
             loop:true,
             scrollbar:{el:'#best_slide .swiper-scrollbar'}, // 스크롤바 표시
             breakpoints:{
-                700:{slidesPerView:3,},
+                600:{slidesPerView:2,},
+                850:{slidesPerView:3,},
                 1100:{slidesPerView:4,},
             },
         })
@@ -151,11 +152,12 @@
                 tab_contents[i].style.display = 'block'
             })
         })
-        like.addEventListener('click',function(e){
-            e.preventDefault()
-            like.classList.toggle('like_fill')
-        })
-        /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+        for(let i of like_img){
+            i.addEventListener('click',function(e){
+                e.preventDefault()
+                i.classList.toggle('like_fill')
+            })
+        }
     </script>
 </body>
 </html>

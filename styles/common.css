@@ -1,6 +1,6 @@
 body, html {scroll-behavior: smooth;}
 header, main, footer {
-    min-width: 1440px;
+    min-width: 1080px;
 }
 header, footer {
     margin: 0 auto;

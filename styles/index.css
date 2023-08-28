@@ -32,19 +32,22 @@ main {}
 #main_slide .swiper-wrapper .slide2 {
     background-image: url(../images/main_bnr2_bg.jpg);
 }
-#main_slide .swiper-wrapper .swiper-slide .container {}
+#main_slide .swiper-wrapper .swiper-slide .container {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
 #main_slide .swiper-wrapper .swiper-slide .container .imgCls {
     width: 712px; height: 560px;
     position: absolute;
-    top: 57px; right: 108px;
+    top: 57px; right: 0;
 }
 #main_slide .swiper-wrapper .swiper-slide .container .imgCls img {width: 100%;}
 #main_slide .swiper-wrapper .swiper-slide .container .slide_txt {
     position: absolute;
-    left: 100px; bottom: 80px;
+    left: 0; top: 300px;
     display: flex;
     flex-flow: column nowrap;
-    margin-left: 92px;
 }
 #main_slide .swiper-wrapper .swiper-slide .slide_txt img {width: 622px;}
 #main_slide .swiper-wrapper .swiper-slide .slide_txt a {

@@ -59,9 +59,17 @@ for(let i of gnb){
 }
 popup.style.display = 'none'
 window.addEventListener('scroll',function(){
-    if(window.pageYOffset > section[1].offsetTop-800){
+    if(window.pageYOffset > section[1].offsetTop-1000){
         header.style.background = 'rgba(0,0,0,0.7)'
         popup.style.display = 'block'
+        for(let i of gnb){
+            i.addEventListener('mouseover',function(){
+                i.firstElementChild.style.color = '#FAFF00'
+            })
+            i.addEventListener('mouseout',function(){
+                i.firstElementChild.style.color = 'white'
+            })
+        }
     }else{
         header.style.background = 'none'
         popup.style.display = 'none'
