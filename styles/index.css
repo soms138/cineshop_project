@@ -46,7 +46,7 @@ main {}
     flex-flow: column nowrap;
     margin-left: 92px;
 }
-#main_slide .swiper-wrapper .swiper-slide .slide_txt img{width: 622px;}
+#main_slide .swiper-wrapper .swiper-slide .slide_txt img {width: 622px;}
 #main_slide .swiper-wrapper .swiper-slide .slide_txt a {
     margin-top: 30px;
     padding: 15px 35px;
@@ -94,37 +94,40 @@ main {}
 }
 .swiper_wrap .title a span img {width: 12px;}
 /* product 통합태그 */
-.best #best_slide .swiper-wrapper .swiper-slide .box,
-.new_menu .tab_contents > div .item_wrap div .box {
-    margin-bottom: 15px;
+.box {
     position: relative;
+    width: 250px;
 }
-.best #best_slide .swiper-wrapper .swiper-slide .box .item_img img,
-.new_menu .tab_contents > div .item_wrap div .box .item_img img {
-    width: 100%;
+.box .item_img {
     display: block;
+    width: 250px; height: 250px;
 }
-.best #best_slide .swiper-wrapper .swiper-slide .box .like_img,
-.new_menu .tab_contents > div .item_wrap div .box .like_img {
+.box .item_img img {width: 100%;}
+.box .like_img {
+    display: block;
     width: 25px; height: 25px;
     position: absolute;
     top: 10px; right: 10px;
+    background: url(../images/icon/ico_like_w.png) no-repeat center;
+    text-indent: -9999px;
+    transition: all 0.3s linear;
 }
-.best #best_slide .swiper-wrapper .swiper-slide .box .like_img img,
-.new_menu .tab_contents > div .item_wrap div .box .like_img img {width: 100%;}
-.best #best_slide .swiper-wrapper .swiper-slide .txt .name,
-.best #best_slide .swiper-wrapper .swiper-slide .txt .price,
-.new_menu .tab_contents > div .item_wrap div .txt .name,
-.new_menu .tab_contents > div .item_wrap div .txt .price {
-    letter-spacing: -0.08em;}
-.best #best_slide .swiper-wrapper .swiper-slide .txt .name,
-.new_menu .tab_contents > div .item_wrap div .txt .name {
-    display: block;
-    margin-bottom: 5px;
+.box .like_img:hover {
+    background: url(../images/icon/ico_like_fill.png) no-repeat center;
 }
-.best #best_slide .swiper-wrapper .swiper-slide .txt .price,
-.new_menu .tab_contents > div .item_wrap div .txt .price {
+.box .like_fill {
     display: block;
+    width: 25px; height: 25px;
+    position: absolute;
+    top: 10px; right: 10px;
+    background: url(../images/icon/ico_like_fill.png) no-repeat center;
+    text-indent: -9999px;
+}
+.txt {}
+.txt .name {
+    margin: 15px 0 5px;
+}
+.txt .price {
     font-weight: 700;
 }
 /* category-slide */

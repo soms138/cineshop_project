@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <aside id="popup"><a href="#"><img src="./images/icon/ico_top.png" alt="위로가기"></a></aside>
@@ -26,7 +27,7 @@
                 <h1><a href="./index.html"><img src="./images/logo_w.png" alt="CINESHOP"></a></h1>
                 <nav>
                     <ul class="gnb">
-                        <li><a href="./product_all.html">ALL</a>
+                        <li class="inner"><a href="./product_all.html" class>ALL</a>
                             <ul class="sub">
                                 <li><a href="#">WB</a>
                                     <ul class="sub2">
@@ -59,10 +60,16 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#">BEST</a></li>
-                        <li><a href="#">NEW</a></li>
-                        <li><a href="#">LIVE</a></li>
-                        <li><a href="#">EVENT</a>
+                        <li><a href="#">BEST</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li><a href="#">NEW</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li><a href="#">LIVE</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li class="inner"><a href="#">EVENT</a>
                             <ul class="sub">
                                 <li><a href="#">진행 이벤트</a></li>
                                 <li><a href="#">종료 이벤트</a></li>
@@ -162,7 +169,7 @@
                     <div class="swiper-slide slide1">
                         <div class="box">
                             <a href="#" class="item_img"><img src="./images/best1.jpg" alt=""></a>
-                            <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                            <a href="#" class="like_img">관심상품등록</a>
                         </div>
                         <a href="#" class="txt">
                             <h2 class="name">해리포터 랜덤카드</h2>
@@ -172,7 +179,7 @@
                     <div class="swiper-slide slide2">
                         <div class="box">
                             <a href="#" class="item_img"><img src="./images/best2.jpg" alt=""></a>
-                            <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                            <a href="#" class="like_img">관심상품등록</a>
                         </div>
                         <a href="#" class="txt">
                             <h2 class="name">CGV 필름마크북 ver.4</h2>
@@ -182,7 +189,7 @@
                     <div class="swiper-slide slide3">
                         <div class="box">
                             <a href="#" class="item_img"><img src="./images/best3.jpg" alt=""></a>
-                            <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                            <a href="#" class="like_img">관심상품등록</a>
                         </div>
                         <a href="#" class="txt">
                             <h2 class="name">스즈메의 문단속 다이진 마그넷 세트</h2>
@@ -192,7 +199,7 @@
                     <div class="swiper-slide slide4">
                         <div class="box">
                             <a href="#" class="item_img"><img src="./images/best4.jpg" alt=""></a>
-                            <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                            <a href="#" class="like_img">관심상품등록</a>
                         </div>
                         <a href="#" class="txt">
                             <h2 class="name">스즈메의 문단속 입체 마그넷</h2>
@@ -202,7 +209,7 @@
                     <div class="swiper-slide slide5">
                         <div class="box">
                             <a href="#" class="item_img"><img src="./images/best5.jpg" alt=""></a>
-                            <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                            <a href="#" class="like_img">관심상품등록</a>
                         </div>
                         <a href="#" class="txt">
                             <h2 class="name">스즈메의 문단속 뱃지</h2>
@@ -212,7 +219,7 @@
                     <div class="swiper-slide slide6">
                         <div class="box">
                             <a href="#" class="item_img"><img src="./images/best6.jpg" alt=""></a>
-                            <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                            <a href="#" class="like_img">관심상품등록</a>
                         </div>
                         <a href="#" class="txt">
                             <h2 class="name">프렌즈 빈티지 노트</h2>
@@ -222,7 +229,7 @@
                     <div class="swiper-slide slide7">
                         <div class="box">
                             <a href="#" class="item_img"><img src="./images/best7.jpg" alt=""></a>
-                            <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                            <a href="#" class="like_img">관심상품등록</a>
                         </div>
                         <a href="#" class="txt">
                             <h2 class="name">포켓몬스터 랜덤뱃지</h2>
@@ -256,7 +263,7 @@
                         <div class="item1">
                             <div class="box">
                                 <a href="#" class="item_img"><img src="./images/tab1_product1.jpg" alt=""></a>
-                                <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                                <a href="#" class="like_img">관심상품등록</a>
                             </div>
                             <a href="#" class="txt">
                                 <h2 class="name">톰과 제리 타투스티커</h2>
@@ -266,7 +273,7 @@
                         <div class="item2">
                             <div class="box">
                                 <a href="#" class="item_img"><img src="./images/tab1_product2.jpg" alt=""></a>
-                                <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                                <a href="#" class="like_img">관심상품등록</a>
                             </div>
                             <a href="#" class="txt">
                                 <h2 class="name">톰과 제리 티셔츠</h2>
@@ -276,7 +283,7 @@
                         <div class="item3">
                             <div class="box">
                                 <a href="#" class="item_img"><img src="./images/tab1_product3.jpg" alt=""></a>
-                                <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                                <a href="#" class="like_img">관심상품등록</a>
                             </div>
                             <a href="#" class="txt">
                                 <h2 class="name">톰과 제리 포스터 세트</h2>
@@ -300,7 +307,7 @@
                         <div class="item1">
                             <div class="box">
                                 <a href="#" class="item_img"><img src="./images/tab2_product1.jpg" alt=""></a>
-                                <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                                <a href="#" class="like_img">관심상품등록</a>
                             </div>
                             <a href="#" class="txt">
                                 <h2 class="name">해리포터 빈티지 스티커</h2>
@@ -310,7 +317,7 @@
                         <div class="item2">
                             <div class="box">
                                 <a href="#" class="item_img"><img src="./images/tab2_product2.jpg" alt=""></a>
-                                <a href="#" class="like_img"><img src="./images/icon/ico_like_w.png" alt="관심상품등록"></a>
+                                <a href="#" class="like_img">관심상품등록</a>
                             </div>
                             <a href="#" class="txt">
                                 <h2 class="name">해리포터 랜덤 뱃지</h2>
@@ -320,7 +327,7 @@
                         <div class="item3">
                             <div class="box">
                                 <a href="#" class="item_img"><img src="./images/tab2_product3.jpg" alt=""></a>
-                                <a href="#" class="like_img"><img src="./images/icon/ico_like.png" alt="관심상품등록"></a>
+                                <a href="#" class="like_img">관심상품등록</a>
                             </div>
                             <a href="#" class="txt">
                                 <h2 class="name">해리포터 입체 마그넷</h2>

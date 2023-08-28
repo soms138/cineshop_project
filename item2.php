@@ -95,7 +95,7 @@
         <a href="#" class="txt">
             <h2 class="name">해리포터 빈티지 스티커</h2>
             <p class="price">
-                <span>4,500원</span>
+                <del>4,500원</del>
                 <span>4,500원</span>
                 <em>10%</em>
             </p>
@@ -159,7 +159,7 @@
         <a href="#" class="txt">
             <h2 class="name">해리포터 아크릴 마그넷 세트</h2>
             <p class="price">
-                <span>64,000원</span>
+                <del>64,000원</del>
                 <span>57,600원</span>
                 <em>10%</em>
             </p>
@@ -173,7 +173,7 @@
         <a href="#" class="txt">
             <h2 class="name">해리포터 롤 스티커</h2>
             <p class="price">
-                <span>7,000원</span>
+                <del>7,000원</del>
                 <span>6,300원</span>
                 <em>10%</em>
             </p>
@@ -187,7 +187,7 @@
         <a href="#" class="txt">
             <h2 class="name">해리포터 마루더즈맵 4단 점착 메모지</h2>
             <p class="price">
-                <span>5,500원</span>
+                <del>5,500원</del>
                 <span>4,950원</span>
                 <em>10%</em>
             </p>

@@ -10,7 +10,7 @@ const mainSlide = new Swiper('#main_slide',{
     }
 })
 const categorySlide = new Swiper('#category_slide',{
-    slidesPerView: 3,
+    slidesPerView: 4,
     direction: 'horizontal',
     autoplay:{delay:1000},
     speed:1000,
@@ -25,14 +25,15 @@ const categorySlide = new Swiper('#category_slide',{
     }
 })
 const bestSlide = new Swiper('#best_slide',{
-    slidesPerView: 2,
+    slidesPerView: 1,
     direction: 'horizontal',
     autoplay:{delay:3000},
     speed:800,
     loop:true,
     scrollbar:{el:'#best_slide .swiper-scrollbar'}, // 스크롤바 표시
     breakpoints:{
-        700:{slidesPerView:3,},
+        600:{slidesPerView:2,},
+        850:{slidesPerView:3,},
         1100:{slidesPerView:4,},
     },
 })

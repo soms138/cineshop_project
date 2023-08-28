@@ -60,37 +60,35 @@ header .left nav .gnb {
 header .left nav .gnb > li {
     width: 130px;
 }
+
 header .left nav .gnb > li:last-child {margin-right: 0;}
 header .left nav .gnb > li > a {
     font-size: 1.333rem;
     font-weight: 700;
     color: #fff;
 }
-/* header .left nav .gnb > li > .sub2{
-    padding: 25px 0;
-    display: flex;
-} */
-/* header .left nav .gnb > li > .sub2, */
-header .left nav .gnb > li > .sub {
+header .left nav .gnb > li > .sub {}
+header .left nav .gnb .inner .sub {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
     position: absolute;
     height: 240px;
-    top: 51px;
+    top: 52px;
 }
-/* header .left nav .gnb > li:last-child .sub2, */
 header .left nav .gnb > li:last-child .sub {
     flex-flow: column nowrap;
+    padding: 25px 0;
 }
 header .left nav .gnb > li > .sub > li {
     width: 130px;
     height: 100%;
     padding: 25px 0;
 }
-/* header .left nav .gnb > li > .sub2 > li {
-    width: 130px;
-} */
+header .left nav .gnb > li:last-child .sub > li {
+    height: 20%;
+    padding: 0;
+}
 header .left nav .gnb > li > .sub > li > a,
 .sub2 li {margin-bottom: 20px;}
 header .left nav .gnb > li > .sub > li > a {
@@ -98,9 +96,12 @@ header .left nav .gnb > li > .sub > li > a {
     font-weight: 700;
     color: #fff;
 }
-/* header .left nav .gnb > li > .sub2:hover, */
+header .left nav .gnb > li:last-child > .sub:hover,
 header .left nav .gnb > li > .sub > li:hover {
     background-color: rgba(255,255,255,0.2);
+}
+header .left nav .gnb > li:last-child > .sub > li:hover {
+    background: none;
 }
 header .left nav .gnb > li > .sub > li:hover > a {
     color: #FAFF00;
