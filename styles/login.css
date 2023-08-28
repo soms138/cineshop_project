@@ -1,3 +1,4 @@
+body, html {scroll-behavior: smooth;}
 #pop_up {
     width: 45px;
     height: 45px;
@@ -109,6 +110,20 @@ main .login .tab_contents .tab_c2 form fieldset p button {
     width: 100%; height: 60px;
     transition: all 0.1s;
 }
+main .login .tab_contents .tab_c2 form fieldset .radio label {
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/icon/ico_checkbox.png) no-repeat left 0 center;
+    background-size: 20px;
+    padding: 15px 0;
+}
+main .login .tab_contents .tab_c2 form fieldset .radio label.active {
+    background: url(../images/icon/ico_checkbox_on.png) no-repeat left 0 center;
+    background-size: 20px;
+}
+main .login .tab_contents .tab_c2 form fieldset .radio label span {margin-left: 30px;}
 main .login .tab_contents .tab_c1 form fieldset p button:hover,
 main .login .tab_contents .tab_c2 form fieldset p button:hover {
     box-shadow: 0 0 5px rgba(227, 15, 0,0.7);
@@ -215,9 +230,18 @@ main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .ema
 main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input #email_select {
     border: 1px solid #ccc;
     border-radius: 5px;
-    height: 70px; height: 60px;
+    height: 60px;
     font-size: 1.333rem;
-    padding: 0 20px;
+    letter-spacing: -0.08em;
+    width: 180px;
+    border-radius: 5px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/icon/ico_prd_option.png) no-repeat right 15px center;
+    background-size: 15px;
+    padding: 15px 30px 15px 15px;
 }
 main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input #email_select option {font-size: 1.333rem;}
 main .login .tab_contents .tab_c2 form fieldset .order_contents .email_wrap .email_input span {font-size: 1.333rem;}
@@ -236,14 +260,20 @@ main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user
     border: 1px solid #ccc;
     border-radius: 5px;
     height: 60px;
-    padding: 0 20px;
-    width: 130px;
 }
 main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user_num #phone_select {
     margin-right: 29px;
     cursor: pointer;
     font-size: 1.333rem;
     color: #000;
+    width: 130px;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/icon/ico_prd_option.png) no-repeat right 15px center;
+    background-size: 15px;
+    padding: 15px 30px 15px 15px;
 }
 main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user_num #phone_select option {font-size: 1.333rem;}
 main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user_num input {
@@ -251,7 +281,7 @@ main .login .tab_contents .tab_c2 form fieldset .order_contents .phone_num .user
     font-size: 1.333rem;
 }
 main .login .tab_contents .tab_c2 form fieldset p {}
-main .login .tab_contents .tab_c2 form fieldset p button {margin-bottom: 60px;}
+main .login .tab_contents .tab_c2 form fieldset p button {}
 
 
 /* join */

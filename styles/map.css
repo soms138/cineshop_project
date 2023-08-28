@@ -1,3 +1,4 @@
+body, html {scroll-behavior: smooth;}
 /* Firefox */
 html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
 /* Opera */

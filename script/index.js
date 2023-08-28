@@ -10,14 +10,14 @@ const mainSlide = new Swiper('#main_slide',{
     }
 })
 const categorySlide = new Swiper('#category_slide',{
-    slidesPerView: 4,
+    slidesPerView: 3,
     direction: 'horizontal',
-    autoplay:{delay:1000},
+    autoplay:{delay:2000},
     speed:1000,
     loop:true,
     breakpoints:{
-        700:{slidesPerView:5,},
-        1400:{slidesPerView:7,},
+        700:{slidesPerView:3,},
+        1000:{slidesPerView:5,},
     },
     navigation: {
         nextEl: '#category_slide .swiper-button-next',
@@ -27,7 +27,7 @@ const categorySlide = new Swiper('#category_slide',{
 const bestSlide = new Swiper('#best_slide',{
     slidesPerView: 1,
     direction: 'horizontal',
-    autoplay:{delay:3000},
+    autoplay:{delay:4000},
     speed:800,
     loop:true,
     scrollbar:{el:'#best_slide .swiper-scrollbar'}, // 스크롤바 표시
@@ -69,6 +69,7 @@ const offlineSlide = new Swiper('#shop_slide',{
 })
 const tab_title = document.querySelectorAll('.tab_title a')
 const tab_contents = document.querySelectorAll('.tab_contents > div')
+const like_img = document.querySelectorAll('.box .like_img')
 for(let i of tab_contents){i.style.display = 'none'}
 tab_contents[0].style.display = 'block'
 tab_title.forEach(function(t,i){
@@ -80,3 +81,9 @@ tab_title.forEach(function(t,i){
         tab_contents[i].style.display = 'block'
     })
 })
+for(let i of like_img){
+    i.addEventListener('click',function(e){
+        e.preventDefault()
+        i.classList.toggle('like_fill')
+    })
+}

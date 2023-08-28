@@ -1,4 +1,7 @@
-body, html {}
+body, html {scroll-behavior: smooth;}
+header, main, footer {
+    min-width: 1440px;
+}
 header, footer {
     margin: 0 auto;
 }
@@ -15,7 +18,9 @@ header, footer {
 header {
     width: 100%;
     position: fixed;
+    top: 0; left: 0;
     z-index: 500;
+    background: rgba(0,0,0,0.7);
 }
 header .container {
     width: 1080px;
@@ -73,21 +78,21 @@ header .left nav .gnb .inner .sub {
     flex-flow: row nowrap;
     align-items: flex-start;
     position: absolute;
-    height: 240px;
-    top: 52px;
+    padding-top: 30px;
 }
 header .left nav .gnb > li:last-child .sub {
     flex-flow: column nowrap;
-    padding: 25px 0;
+    padding: 30px 0;
+    height: 240px;
 }
 header .left nav .gnb > li > .sub > li {
     width: 130px;
-    height: 100%;
-    padding: 25px 0;
+    height: 240px;
+    padding-top: 20px;
 }
 header .left nav .gnb > li:last-child .sub > li {
     height: 20%;
-    padding: 0;
+    color: #fff;
 }
 header .left nav .gnb > li > .sub > li > a,
 .sub2 li {margin-bottom: 20px;}
@@ -96,7 +101,6 @@ header .left nav .gnb > li > .sub > li > a {
     font-weight: 700;
     color: #fff;
 }
-header .left nav .gnb > li:last-child > .sub:hover,
 header .left nav .gnb > li > .sub > li:hover {
     background-color: rgba(255,255,255,0.2);
 }

@@ -1,3 +1,12 @@
+body, html {scroll-behavior: smooth;}
+#pop_up {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 900;
+}
+#pop_up a {}
+#pop_up a img {}
 main {}
 main .product_title {
     display: flex;
@@ -194,15 +203,53 @@ main .product_wrap .tab_contents {
     width: 1080px;
     margin: 100px auto;
 }
-main .product_wrap .tab_contents > div {}
-main .product_wrap .tab_contents > div:first-child {
+main .product_wrap .tab_contents .prd_c2,
+main .product_wrap .tab_contents .prd_c3,
+main .product_wrap .tab_contents .prd_c4 {
+    margin: 100px 0;
+}
+main .product_wrap .tab_contents .prd_c1 {
     background: #f3f3f3;
     width: 1080px;
     padding: 100px;
 }
+main .product_wrap .tab_contents > div:nth-child(2) {}
+main .product_wrap .tab_contents > div:nth-child(2) > div {
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_title {
+    font-size: 1.333rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_desc {}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_desc p {
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_desc p em {
+    font-weight: 700;
+    margin-right: 10px;
+}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_desc p span {}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_desc > p:last-child {margin-bottom: 0;}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_desc .desc_t {font-weight: 700;}
+main .product_wrap .tab_contents > div:nth-child(2) > div .i_desc .desc_c p:last-child {margin-bottom: 30px;}
 main .product_wrap .tab_contents > div img {
     display: block;
     width: 100%;
     margin : 0 auto 20px;
 }
-main .product_wrap .tab_contents > div iframe {}
+main .product_wrap .tab_contents > div iframe {
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+}
+main .product_wrap .tab_contents > div > span {
+    font-size: 1.333rem;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}

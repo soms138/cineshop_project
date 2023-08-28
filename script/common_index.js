@@ -10,6 +10,7 @@ const section = document.querySelectorAll('section')
 const popup = document.querySelector('#popup')
 
 console.log(open_search,search_btn,search_close,gnb,sub,nav_bg)
+header.style.background = 'none'
 open_search.style.transform = 'translateY(-100%)';
 open_search.style.transition = 'all 1s ease';
 search_btn.addEventListener('click',function(){
