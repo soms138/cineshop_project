@@ -10,6 +10,7 @@ body, html {scroll-behavior: smooth;}
 main {
     margin: 181px auto 100px;
     text-align: center;
+    min-width: 1080px;
 }
 main .login {
     margin: 0 auto;

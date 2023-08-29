@@ -20,6 +20,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 #pop_up a img {}
 main {
     margin: 181px auto 100px;
+    min-width: 1440px;
 }
 main h2 {
     font-size: 1.777rem;

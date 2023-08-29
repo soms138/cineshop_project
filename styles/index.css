@@ -14,7 +14,9 @@ body, html {scroll-behavior: smooth;}
 }
 .swiper_wrap, .new_menu {padding: 70px 0;}
 /* main */
-main {}
+main {
+    min-width: 1080px;
+}
 /* main_slide */
 #main_slide {}
 #main_slide .swiper-wrapper {}
