@@ -4,6 +4,7 @@ const mainSlide = new Swiper('#main_slide',{
     autoplay:{delay:5000},
     speed:800,
     loop:true,
+    loopAdditionalSlides: 1,
     navigation: {
         nextEl: '#main_slide .swiper-button-next',
         prevEl: '#main_slide .swiper-button-prev'
@@ -11,13 +12,11 @@ const mainSlide = new Swiper('#main_slide',{
 })
 const categorySlide = new Swiper('#category_slide',{
     slidesPerView: 3,
-    direction: 'horizontal',
-    autoplay:{delay:1500},
-    speed:1000,
     loop:true,
+    loopAdditionalSlides: 1,
     breakpoints:{
-        700:{slidesPerView:3,},
-        1000:{slidesPerView:5,},
+        700:{slidesPerView:5,},
+        1000:{slidesPerView:7,},
     },
     navigation: {
         nextEl: '#category_slide .swiper-button-next',
@@ -30,6 +29,7 @@ const bestSlide = new Swiper('#best_slide',{
     autoplay:{delay:3000},
     speed:800,
     loop:true,
+    loopAdditionalSlides: 1,
     scrollbar:{el:'#best_slide .swiper-scrollbar'}, // 스크롤바 표시
     breakpoints:{
         600:{slidesPerView:2,},
@@ -51,6 +51,7 @@ const offlineSlide = new Swiper('#shop_slide',{
     },
     speed:800,
     loop:true,
+    loopAdditionalSlides: 1,
     on:{
         init:function(){
             this.slides[this.activeIndex].querySelector('.slide_txt').style.opacity = '1';

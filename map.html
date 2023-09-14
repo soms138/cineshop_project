@@ -33,49 +33,49 @@
                             <span>서울특별시 용산구 한강대로23길 55 
                                 (한강로동, HDC아이파크몰 6층)</span>
                         </div>
-                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                        <p><button type="button">관심매장 등록</button></p>
                     </a>
                     <a href="#">
                         <div class="txt">
                             <em>여의도점</em>
                             <span>서울 영등포구 여의도동 국제금융로 15 IFC ~ 파크원간 지하공공보도</span>
                         </div>
-                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                        <p><button type="button">관심매장 등록</button></p>
                     </a>
                     <a href="#">
                         <div class="txt">
                             <em>영등포점</em>
                             <span>서울 영등포구 영중로 15 타임스퀘어 4F</span>
                         </div>
-                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                        <p><button type="button">관심매장 등록</button></p>
                     </a>
                     <a href="#">
                         <div class="txt">
                             <em>왕십리점</em>
                             <span>서울 성동구 왕십리광장로 17</span>
                         </div>
-                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                        <p><button type="button">관심매장 등록</button></p>
                     </a>
                     <a href="#">
                         <div class="txt">
                             <em>인천점</em>
                             <span>인천 남동구 예술로 198</span>
                         </div>
-                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                        <p><button type="button">관심매장 등록</button></p>
                     </a>
                     <a href="#">
                         <div class="txt">
                             <em>광교점</em>
                             <span>경기도 수원시 영통구 광교중앙로 124 갤러리아백화점 광교점 10층</span>
                         </div>
-                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                        <p><button type="button">관심매장 등록</button></p>
                     </a>
                     <a href="#">
                         <div class="txt">
                             <em>천안 터미널점</em>
                             <span>충남 천안시 동남구 만남로 43</span>
                         </div>
-                        <p><button type="button"><img src="./images/icon/ico_storeP_off.png" alt="관심매장 등록"></button></p>
+                        <p><button type="button">관심매장 등록</button></p>
                     </a>
                 </div>
             </div>
@@ -203,6 +203,8 @@
     <script>
         const map_contents = document.querySelectorAll('.map_contents > div')
         const store_select = document.querySelectorAll('.store_select a')
+        const storeP_aTag = document.querySelectorAll('.store_select > a')
+        const storeP_btn = document.querySelectorAll('.store_select > a > p > button')
         for(let i of map_contents){i.style.display = 'none'}
         map_contents[0].style.display = 'block'
         store_select.forEach(function(t,i){
@@ -212,6 +214,12 @@
                 t.classList.add('active')
                 for(let i of map_contents){i.style.display = 'none'}
                 map_contents[i].style.display = 'flex'
+            })
+        })
+        storeP_aTag.forEach(function(target,index){
+            target.lastElementChild.addEventListener('click',function(e){
+                e.preventDefault()
+                storeP_btn[index].classList.toggle('storeP_on')
             })
         })
     </script>
