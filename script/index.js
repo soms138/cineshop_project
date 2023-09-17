@@ -38,7 +38,7 @@ const bestSlide = new Swiper('#best_slide',{
     },
 })
 const offlineSlide = new Swiper('#shop_slide',{
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     direction: 'horizontal',
     centeredSlides:true,
     slideToClickedSlide: true,

@@ -43,7 +43,7 @@
                         <li><a href="#">NEW</a>
                             <ul class="sub"></ul>
                         </li>
-                        <li><a href="#">LIVE</a>
+                        <li><a href="./map.html">MAP</a>
                             <ul class="sub"></ul>
                         </li>
                         <li class="inner"><a href="#">EVENT</a>
