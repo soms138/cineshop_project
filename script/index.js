@@ -14,6 +14,7 @@ const categorySlide = new Swiper('#category_slide',{
     slidesPerView: 3,
     loop:true,
     loopAdditionalSlides: 1,
+    spaceBetween: 45,
     breakpoints:{
         700:{slidesPerView:5,},
         1000:{slidesPerView:7,},

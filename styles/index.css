@@ -70,7 +70,6 @@ main {
     width: 194px;
 }
 .swiper-pagination {}
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* slide title 통합태그 */
 .swiper_wrap {}
 .swiper_wrap .title {
@@ -147,11 +146,9 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150px;
-    margin-right: 45px;
     position: relative;
     z-index: 50;
     transition: all 0.5s linear;
-    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 .category #category_slide .swiper-wrapper .slide1 {background-image: url(../images/category1.png);}
 .category #category_slide .swiper-wrapper .slide2 {background-image: url(../images/category2.png);}
@@ -177,7 +174,6 @@ main {
 .category #category_slide .swiper-wrapper .swiper-slide span {
     display: none;
     transition: all 0.5s linear;
-    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 }
 .category #category_slide .swiper-wrapper .swiper-slide:hover span {
     display: block;
@@ -347,7 +343,6 @@ main {
     font-weight: 700;
     text-align: center;
     padding: 7px 0;
-    /* width: 130px; */
     width: 180px;
     margin-bottom: 0;
 }
