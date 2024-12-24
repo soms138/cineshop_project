@@ -14,7 +14,7 @@ const categorySlide = new Swiper('#category_slide',{
     slidesPerView: 3,
     loop:true,
     loopAdditionalSlides: 1,
-    spaceBetween: 45,
+    spaceBetween: 30,
     breakpoints:{
         700:{slidesPerView:5,},
         1000:{slidesPerView:7,},
@@ -59,13 +59,11 @@ const offlineSlide = new Swiper('#shop_slide',{
         },
         slideChange:function(){
             this.slides.forEach(target => {
-                target.style.opacity = '0.7';
                 target.querySelector('.slide_txt').style.opacity = '0';
                 target.querySelector('.slide_txt').style.transform = 'translateX(40%)';
             })
             this.slides[this.activeIndex].querySelector('.slide_txt').style.opacity = '1';
             this.slides[this.activeIndex].querySelector('.slide_txt').style.transform = 'translateX(0)';
-            this.slides[this.activeIndex].style.opacity = '1';
         },
     },
 })

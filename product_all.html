@@ -17,7 +17,85 @@
 </head>
 <body>
     <aside id="popup"><a href="#"><img src="./images/icon/ico_top.png" alt="위로가기"></a></aside>
-    <?php include('./header.php') ?>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h1><a href="./index.html"><img src="./images/logo_w.png" alt="CINESHOP"></a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li class="inner"><a href="./product_all.html" class>ALL</a>
+                            <ul class="sub">
+                                <li><a href="./product_all.html">WB</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">해리포터</a></li>
+                                        <li><a href="#">프렌즈</a></li>
+                                        <li><a href="#">배트맨</a></li>
+                                        <li><a href="#">톰과제리</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./product_all.html">DISNEY/PIXAR</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">업</a></li>
+                                        <li><a href="#">덤보</a></li>
+                                        <li><a href="#">마블</a></li>
+                                        <li><a href="#">심슨</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./product_all.html">UNIVERSAL</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">슈퍼마리오</a></li>
+                                        <li><a href="#">핫스터프</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./product_all.html">CINESHOP</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">파코니</a></li>
+                                        <li><a href="#">콜렉팅</a></li>
+                                        <li><a href="#">J-MOVIE</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BEST</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li><a href="#">NEW</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li><a href="./map.html">MAP</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li class="inner"><a href="#">EVENT</a>
+                            <ul class="sub">
+                                <li><a href="#">진행 이벤트</a></li>
+                                <li><a href="#">종료 이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav_bg"></div>
+                </nav>
+            </div>
+            <div class="lnb">
+                <div class="search_wrap">
+                    <button type="button"><img src="./images/icon/ico_search.png" alt="검색"></button>
+                    <div class="open_search">
+                        <div class="container">
+                            <button id="search_close" type="button"><img src="./images/icon/ico_close.png" alt="닫기"></button>
+                            <form action="#" method="get">
+                                <fieldset>
+                                    <legend class="skip">검색양식</legend>
+                                    <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
+                                    <button type="submit" id="search_btn"><img src="./images/icon/ico_search.png" alt="검색"></button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <a href="./login.html"><img src="./images/icon/ico_user.png" alt="로그인"></a>
+                <a href="#"><img src="./images/icon/ico_cart.png" alt="장바구니"></a>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="all_product">
             <h1>All Product</h1>
@@ -106,23 +184,1003 @@
         </div>
         <section class="tab_contents product_wrap">
             <div class="all">
-                <?php include('./item1.php') ?>
+                <div class="product_t">
+                    <div class="movie">
+                        <a href="#" class="active">해리포터</a>
+                        <span>|</span>
+                        <a href="#">프렌즈</a>
+                        <span>|</span>
+                        <a href="#">배트맨</a>
+                        <span>|</span>
+                        <a href="#">톰과 제리</a>
+                    </div>
+                    <select name="order" id="order">
+                        <option value="">최신순</option>
+                        <option value="">인기순</option>
+                        <option value="">리뷰순</option>
+                        <option value="">최고가</option>
+                        <option value="">최저가</option>
+                    </select>
+                </div>
+                <div class="product_contents">
+                    <div class="product p1">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product1.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">접착식 포토앨범 내지(10매입)</h2>
+                            <p class="price">5,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p2">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product2.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">포토카드 비닐(30매입)</h2>
+                            <p class="price">3,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p3">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product3.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 접착식 포토앨범</h2>
+                            <p class="price">33,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p4">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product4.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 실제본 노트</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p5">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product5.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 엽서 콜렉팅북</h2>
+                            <p class="price">20,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p6">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product6.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 뱃지</h2>
+                            <p class="price">8,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p7">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product7.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 후크마그넷</h2>
+                            <p class="price">9,900원</p>
+                        </a>
+                    </div>
+                    <div class="product p8">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product8.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 티셔츠</h2>
+                            <p class="price">27,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p9">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product9.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 모자</h2>
+                            <p class="price">24,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p10">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product10.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html#" class="txt">
+                            <h2 class="name">UP 캐릭터 티셔츠</h2>
+                            <p class="price">27,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p11">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product11.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 캐릭터 모자</h2>
+                            <p class="price">24,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p12">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product12.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">덤보 엽서 스티커 세트</h2>
+                            <p class="price">15,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p13">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product13.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 키링</h2>
+                            <p class="price">12,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p14">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product14.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 파티용품</h2>
+                            <p class="price">1,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p15">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product15.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">덤보 빅 트래블 스티커</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p16">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product16.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 젤리시계</h2>
+                            <p class="price">14,500원</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="page">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
             </div>
             <div class="wb">
-                <?php include('./item2.php') ?>
+                <div class="product_t">
+                    <div class="movie">
+                        <a href="#" class="active">해리포터</a>
+                        <span>|</span>
+                        <a href="#">프렌즈</a>
+                        <span>|</span>
+                        <a href="#">배트맨</a>
+                        <span>|</span>
+                        <a href="#">톰과 제리</a>
+                    </div>
+                    <select name="order" id="order">
+                        <option value="">최신순</option>
+                        <option value="">인기순</option>
+                        <option value="">리뷰순</option>
+                        <option value="">최고가</option>
+                        <option value="">최저가</option>
+                    </select>
+                </div>
+                <div class="product_contents">
+                    <div class="product p1">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product1.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 랜덤카드</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p2">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product2.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 빈티지 노트</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p3">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product3.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html#" class="txt">
+                            <h2 class="name">프렌즈 엽서 세트</h2>
+                            <p class="price">15,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p4">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product4.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 스티커 컬렉션</h2>
+                            <p class="price">8,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p5">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product5.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 포스터 세트</h2>
+                            <p class="price">6,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p6">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product6.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 타투스티커</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p7">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product7.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 티셔츠</h2>
+                            <p class="price">30,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p8">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product8.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 빈티지 스티커</h2>
+                            <p class="price">
+                                <del>4,500원</del>
+                                <span>4,500원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="product p9">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product9.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 포스터 세트</h2>
+                            <p class="price">6,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p10">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product10.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">다크나이트 포스터 세트</h2>
+                            <p class="price">12,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p11">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product11.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 투명 트래블 스티커</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p12">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product12.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 지관 포스터 세트</h2>
+                            <p class="price">12,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p13">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product13.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 엽서 스티커 세트</h2>
+                            <p class="price">15,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p14">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product14.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 아크릴 마그넷 세트</h2>
+                            <p class="price">
+                                <del>64,000원</del>
+                                <span>57,600원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="product p15">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product15.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 롤 스티커</h2>
+                            <p class="price">
+                                <del>7,000원</del>
+                                <span>6,300원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="product p16">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product16.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 마루더즈맵 4단 점착 메모지</h2>
+                            <p class="price">
+                                <del>5,500원</del>
+                                <span>4,950원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="page">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
             </div>
             <div class="disney">
-                <?php include('./item1.php') ?>
+                <div class="product_t">
+                    <div class="movie">
+                        <a href="#" class="active">해리포터</a>
+                        <span>|</span>
+                        <a href="#">프렌즈</a>
+                        <span>|</span>
+                        <a href="#">배트맨</a>
+                        <span>|</span>
+                        <a href="#">톰과 제리</a>
+                    </div>
+                    <select name="order" id="order">
+                        <option value="">최신순</option>
+                        <option value="">인기순</option>
+                        <option value="">리뷰순</option>
+                        <option value="">최고가</option>
+                        <option value="">최저가</option>
+                    </select>
+                </div>
+                <div class="product_contents">
+                    <div class="product p1">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product1.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">접착식 포토앨범 내지(10매입)</h2>
+                            <p class="price">5,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p2">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product2.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">포토카드 비닐(30매입)</h2>
+                            <p class="price">3,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p3">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product3.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 접착식 포토앨범</h2>
+                            <p class="price">33,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p4">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product4.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 실제본 노트</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p5">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product5.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 엽서 콜렉팅북</h2>
+                            <p class="price">20,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p6">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product6.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 뱃지</h2>
+                            <p class="price">8,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p7">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product7.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 후크마그넷</h2>
+                            <p class="price">9,900원</p>
+                        </a>
+                    </div>
+                    <div class="product p8">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product8.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 티셔츠</h2>
+                            <p class="price">27,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p9">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product9.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 모자</h2>
+                            <p class="price">24,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p10">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product10.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html#" class="txt">
+                            <h2 class="name">UP 캐릭터 티셔츠</h2>
+                            <p class="price">27,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p11">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product11.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 캐릭터 모자</h2>
+                            <p class="price">24,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p12">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product12.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">덤보 엽서 스티커 세트</h2>
+                            <p class="price">15,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p13">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product13.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 키링</h2>
+                            <p class="price">12,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p14">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product14.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 파티용품</h2>
+                            <p class="price">1,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p15">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product15.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">덤보 빅 트래블 스티커</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p16">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product16.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 젤리시계</h2>
+                            <p class="price">14,500원</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="page">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
             </div>
             <div class="universal">
-                <?php include('./item2.php') ?>
+                <div class="product_t">
+                    <div class="movie">
+                        <a href="#" class="active">해리포터</a>
+                        <span>|</span>
+                        <a href="#">프렌즈</a>
+                        <span>|</span>
+                        <a href="#">배트맨</a>
+                        <span>|</span>
+                        <a href="#">톰과 제리</a>
+                    </div>
+                    <select name="order" id="order">
+                        <option value="">최신순</option>
+                        <option value="">인기순</option>
+                        <option value="">리뷰순</option>
+                        <option value="">최고가</option>
+                        <option value="">최저가</option>
+                    </select>
+                </div>
+                <div class="product_contents">
+                    <div class="product p1">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product1.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 랜덤카드</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p2">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product2.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 빈티지 노트</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p3">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product3.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html#" class="txt">
+                            <h2 class="name">프렌즈 엽서 세트</h2>
+                            <p class="price">15,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p4">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product4.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 스티커 컬렉션</h2>
+                            <p class="price">8,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p5">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product5.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 포스터 세트</h2>
+                            <p class="price">6,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p6">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product6.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 타투스티커</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p7">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product7.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 티셔츠</h2>
+                            <p class="price">30,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p8">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product8.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 빈티지 스티커</h2>
+                            <p class="price">
+                                <del>4,500원</del>
+                                <span>4,500원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="product p9">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product9.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 포스터 세트</h2>
+                            <p class="price">6,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p10">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product10.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">다크나이트 포스터 세트</h2>
+                            <p class="price">12,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p11">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product11.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 투명 트래블 스티커</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p12">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product12.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">프렌즈 지관 포스터 세트</h2>
+                            <p class="price">12,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p13">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product13.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">톰과 제리 엽서 스티커 세트</h2>
+                            <p class="price">15,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p14">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product14.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 아크릴 마그넷 세트</h2>
+                            <p class="price">
+                                <del>64,000원</del>
+                                <span>57,600원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="product p15">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product15.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 롤 스티커</h2>
+                            <p class="price">
+                                <del>7,000원</del>
+                                <span>6,300원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="product p16">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/wb/product16.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">해리포터 마루더즈맵 4단 점착 메모지</h2>
+                            <p class="price">
+                                <del>5,500원</del>
+                                <span>4,950원</span>
+                                <em>10%</em>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="page">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
             </div>
             <div class="cineshop">
-                <?php include('./item1.php') ?>
+                <div class="product_t">
+                    <div class="movie">
+                        <a href="#" class="active">해리포터</a>
+                        <span>|</span>
+                        <a href="#">프렌즈</a>
+                        <span>|</span>
+                        <a href="#">배트맨</a>
+                        <span>|</span>
+                        <a href="#">톰과 제리</a>
+                    </div>
+                    <select name="order" id="order">
+                        <option value="">최신순</option>
+                        <option value="">인기순</option>
+                        <option value="">리뷰순</option>
+                        <option value="">최고가</option>
+                        <option value="">최저가</option>
+                    </select>
+                </div>
+                <div class="product_contents">
+                    <div class="product p1">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product1.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">접착식 포토앨범 내지(10매입)</h2>
+                            <p class="price">5,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p2">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product2.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">포토카드 비닐(30매입)</h2>
+                            <p class="price">3,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p3">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product3.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 접착식 포토앨범</h2>
+                            <p class="price">33,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p4">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product4.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 실제본 노트</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p5">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product5.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 엽서 콜렉팅북</h2>
+                            <p class="price">20,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p6">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product6.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 뱃지</h2>
+                            <p class="price">8,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p7">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product7.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 후크마그넷</h2>
+                            <p class="price">9,900원</p>
+                        </a>
+                    </div>
+                    <div class="product p8">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product8.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 티셔츠</h2>
+                            <p class="price">27,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p9">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product9.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 모자</h2>
+                            <p class="price">24,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p10">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product10.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html#" class="txt">
+                            <h2 class="name">UP 캐릭터 티셔츠</h2>
+                            <p class="price">27,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p11">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product11.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">UP 캐릭터 모자</h2>
+                            <p class="price">24,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p12">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product12.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">덤보 엽서 스티커 세트</h2>
+                            <p class="price">15,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p13">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product13.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 키링</h2>
+                            <p class="price">12,500원</p>
+                        </a>
+                    </div>
+                    <div class="product p14">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product14.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">심슨 파티용품</h2>
+                            <p class="price">1,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p15">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product15.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">덤보 빅 트래블 스티커</h2>
+                            <p class="price">5,000원</p>
+                        </a>
+                    </div>
+                    <div class="product p16">
+                        <div class="box">
+                            <a href="./detail.html" class="item_img"><img src="./images/disney/product16.jpg" alt=""></a>
+                            <a href="#" class="like_img">관심상품등록</a>
+                        </div>
+                        <a href="./detail.html" class="txt">
+                            <h2 class="name">인사이드아웃 캐릭터 젤리시계</h2>
+                            <p class="price">14,500원</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="page">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
             </div>
         </section>
     </main>
-    <?php include('./footer.php') ?>
+    <footer>
+        <div class="fnb_wrap">
+            <div class="fnb_t">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">이용안내</a>
+                <a href="#">문의</a>
+                <a href="#">입점신청</a>
+            </div>
+            <div class="fnb_mid">
+                <div class="left">
+                    <p><a href="#">1544 - 1122</a></p>
+                    <p>CS CENTER : MON-FRI 09:00 - 18:00</p>
+                </div>
+                <div class="right">
+                    <img src="./images/logo.png" alt="CINESHOP">
+                    <a href="#">instargram</a>
+                </div>
+            </div>
+            <div class="fnb_btm">
+                <p>
+                    회사명 : CJCGV (씨제이 씨지브이) (주) 대표자 : 허민회 주소 : 서울특별시 용산구 한강대로23길 55 (한강로3가)<br>
+                    사업자등록번호 : 104-81-45690 <a href="#">[사업자정보확인]</a> 통신판매업신고 : 제2017-서울용산-0662호 대표전화 : 1544-1122<br>이메일 : cgv_cineshop@cj.net 개인정보보호책임자 : <a href="#">조진호</a>
+                </p>
+                <p>COPYRIGHT ⓒ CGV 씨네샵. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
     <script src="./script/common.js"></script>
     <script>
         const tab_title = document.querySelectorAll('.tab_title a')

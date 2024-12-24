@@ -26,7 +26,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 #main_slide .swiper-wrapper .slide1 {
     background-image: url(../images/main_bnr1_bg.jpg);
@@ -59,7 +59,7 @@ main {
     color: #fff;
     font-size: 1.333rem;
     font-weight: 700;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 #main_slide .swiper-wrapper .slide1 .slide_txt a {
     background: #E30F00;
@@ -82,7 +82,7 @@ main {
 .offline .title h2 span:first-child {
     font-size: 1.777rem;
     font-weight: 700;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .swiper_wrap .title a {
     display: flex;
@@ -94,7 +94,7 @@ main {
 .swiper_wrap .title a span {
     color: #aaa;
     margin-right: 5px;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .swiper_wrap .title a span img {width: 12px;}
 /* product 통합태그 */
@@ -141,7 +141,7 @@ main {
     width: 930px;
 }
 .category #category_slide .swiper-wrapper .swiper-slide {
-    width: 150px; height: 150px;
+    width: 150px !important; height: 150px;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,7 +229,7 @@ main {
 .new_menu .tab_title a {
     font-size: 1.777rem;
     color: #aaa;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .new_menu .tab_title a.active {
     font-weight: 700;
@@ -239,7 +239,7 @@ main {
     font-size: 1.333rem;
     margin: 0 20px;
     color: #aaa;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .new_menu .tab_contents {}
 .new_menu .tab_contents > div {}
@@ -262,11 +262,11 @@ main {
     font-size: 2.369rem;
     font-weight: 700;
     margin-bottom: 10px;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .new_menu .tab_contents > div .tab_bnr .txt span {
     font-size: 1.333rem;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .new_menu .tab_contents > div .tab_bnr .txt a {
     margin-top: 200px;
@@ -281,7 +281,7 @@ main {
     color: #fff;
     font-weight: 700;
     margin-right: 10px;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .new_menu .tab_contents > div .tab_bnr .txt a img {
     width: 15px; height: 15px;
@@ -320,14 +320,14 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .ad_bnr .txt {
     width: 1080px;
     margin: 0 auto;
 }
 .ad_bnr .txt p {
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .ad_bnr .txt p:first-child {
     margin-bottom: 10px;
@@ -342,7 +342,7 @@ main {
     font-size: 1.333rem;
     font-weight: 700;
     text-align: center;
-    padding: 7px 0;
+    padding: 12px 0;
     width: 180px;
     margin-bottom: 0;
 }
@@ -364,7 +364,7 @@ main {
 .offline #shop_slide .swiper-wrapper {}
 .offline #shop_slide .swiper-wrapper .swiper-slide {
     display: block;
-    width: 300px; height: 300px;
+    width: 300px !; height: 300px;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -405,7 +405,7 @@ main {
 .offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt em,
 .offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt span {
     display: block;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt em {
     font-size: 1.777rem;
@@ -414,7 +414,7 @@ main {
     color: #fff;
 }
 .offline #shop_slide .swiper-wrapper .swiper-slide .slide_txt span {
-    line-height: 19px;
+    line-height: 25px;
     color: rgba(255,255,255,0.8);
 }
 /* alarm */
@@ -444,7 +444,7 @@ main {
 .alarm p,
 .alarm button span {
     color: #fff;
-    letter-spacing: -0.08em;
+    letter-spacing: -0.02em;
 }
 .alarm p:nth-child(3) {color: #B3D8DF;}
 .alarm p:first-child,

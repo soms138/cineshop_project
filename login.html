@@ -14,7 +14,85 @@
 </head>
 <body>
     <aside id="popup"><a href="#"><img src="./images/icon/ico_top.png" alt="위로가기"></a></aside>
-    <?php include('./header.php') ?>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h1><a href="./index.html"><img src="./images/logo_w.png" alt="CINESHOP"></a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li class="inner"><a href="./product_all.html" class>ALL</a>
+                            <ul class="sub">
+                                <li><a href="./product_all.html">WB</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">해리포터</a></li>
+                                        <li><a href="#">프렌즈</a></li>
+                                        <li><a href="#">배트맨</a></li>
+                                        <li><a href="#">톰과제리</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./product_all.html">DISNEY/PIXAR</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">업</a></li>
+                                        <li><a href="#">덤보</a></li>
+                                        <li><a href="#">마블</a></li>
+                                        <li><a href="#">심슨</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./product_all.html">UNIVERSAL</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">슈퍼마리오</a></li>
+                                        <li><a href="#">핫스터프</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./product_all.html">CINESHOP</a>
+                                    <ul class="sub2">
+                                        <li><a href="#">파코니</a></li>
+                                        <li><a href="#">콜렉팅</a></li>
+                                        <li><a href="#">J-MOVIE</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BEST</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li><a href="#">NEW</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li><a href="./map.html">MAP</a>
+                            <ul class="sub"></ul>
+                        </li>
+                        <li class="inner"><a href="#">EVENT</a>
+                            <ul class="sub">
+                                <li><a href="#">진행 이벤트</a></li>
+                                <li><a href="#">종료 이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav_bg"></div>
+                </nav>
+            </div>
+            <div class="lnb">
+                <div class="search_wrap">
+                    <button type="button"><img src="./images/icon/ico_search.png" alt="검색"></button>
+                    <div class="open_search">
+                        <div class="container">
+                            <button id="search_close" type="button"><img src="./images/icon/ico_close.png" alt="닫기"></button>
+                            <form action="#" method="get">
+                                <fieldset>
+                                    <legend class="skip">검색양식</legend>
+                                    <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
+                                    <button type="submit" id="search_btn"><img src="./images/icon/ico_search.png" alt="검색"></button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <a href="./login.html"><img src="./images/icon/ico_user.png" alt="로그인"></a>
+                <a href="#"><img src="./images/icon/ico_cart.png" alt="장바구니"></a>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="login">
             <h1>LOGIN</h1>
@@ -105,7 +183,35 @@
             </div>
         </div>
     </main>
-    <?php include('./footer.php') ?>
+    <footer>
+        <div class="fnb_wrap">
+            <div class="fnb_t">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">이용안내</a>
+                <a href="#">문의</a>
+                <a href="#">입점신청</a>
+            </div>
+            <div class="fnb_mid">
+                <div class="left">
+                    <p><a href="#">1544 - 1122</a></p>
+                    <p>CS CENTER : MON-FRI 09:00 - 18:00</p>
+                </div>
+                <div class="right">
+                    <img src="./images/logo.png" alt="CINESHOP">
+                    <a href="#">instargram</a>
+                </div>
+            </div>
+            <div class="fnb_btm">
+                <p>
+                    회사명 : CJCGV (씨제이 씨지브이) (주) 대표자 : 허민회 주소 : 서울특별시 용산구 한강대로23길 55 (한강로3가)<br>
+                    사업자등록번호 : 104-81-45690 <a href="#">[사업자정보확인]</a> 통신판매업신고 : 제2017-서울용산-0662호 대표전화 : 1544-1122<br>이메일 : cgv_cineshop@cj.net 개인정보보호책임자 : <a href="#">조진호</a>
+                </p>
+                <p>COPYRIGHT ⓒ CGV 씨네샵. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
     <script src="./script/common.js"></script>
     <script src="./script/login.js"></script>
 </body>
